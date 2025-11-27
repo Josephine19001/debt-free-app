@@ -3,71 +3,98 @@ import PageLayout from "@/components/PageLayout";
 
 const posts = [
   {
+    slug: "financial-state-of-americans-2025",
+    title: "THE FINANCIAL STATE OF AMERICANS IN 2025",
+    excerpt: "Understanding the debt crisis and what it means for your financial future. A deep dive into the numbers that matter.",
+    date: "Nov 25, 2025",
+    readTime: "8 min read",
+    featured: true,
+  },
+  {
     slug: "debt-avalanche-vs-snowball",
-    title: "Debt Avalanche vs Snowball: Which Method is Right for You?",
-    excerpt: "Compare two popular debt payoff strategies and find out which one will help you save the most money.",
-    date: "Nov 25, 2024",
-    readTime: "5 min read",
+    title: "DEBT AVALANCHE VS. SNOWBALL",
+    excerpt: "Which strategy will get you debt-free faster? A comparison of the math and psychology behind both methods.",
+    date: "Nov 20, 2025",
+    readTime: "7 min read",
   },
   {
-    slug: "emotional-side-of-debt",
-    title: "The Emotional Side of Debt: Managing Stress and Staying Motivated",
-    excerpt: "Debt isn't just about numbers. Learn how to handle the emotional challenges of your debt-free journey.",
-    date: "Nov 20, 2024",
-    readTime: "4 min read",
-  },
-  {
-    slug: "credit-score-while-paying-debt",
-    title: "How to Improve Your Credit Score While Paying Off Debt",
-    excerpt: "Paying off debt and building credit can go hand in hand. Here's how to do both effectively.",
-    date: "Nov 15, 2024",
-    readTime: "6 min read",
+    slug: "psychology-of-debt",
+    title: "THE PSYCHOLOGY OF DEBT",
+    excerpt: "Why it's so hard to break free, and how understanding your mind can help you overcome financial obstacles.",
+    date: "Nov 15, 2025",
+    readTime: "9 min read",
   },
   {
     slug: "emergency-fund-vs-debt",
-    title: "Should You Build an Emergency Fund or Pay Off Debt First?",
-    excerpt: "The age-old question answered: when to prioritize savings vs debt repayment.",
-    date: "Nov 10, 2024",
-    readTime: "4 min read",
+    title: "EMERGENCY FUND VS. PAYING OFF DEBT",
+    excerpt: "The great debate settled. How to balance building savings while eliminating debt—a practical guide.",
+    date: "Nov 10, 2025",
+    readTime: "6 min read",
   },
 ];
 
 export default function BlogPage() {
+  const featuredPost = posts.find(p => p.featured);
+  const otherPosts = posts.filter(p => !p.featured);
+
   return (
     <PageLayout>
       <div className="flex-1 overflow-y-auto py-8">
-        <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-8">
-            <h1 className="text-3xl sm:text-4xl font-bold mb-3">
-              <span className="gradient-text">Blog</span>
+        <div className="max-w-5xl mx-auto">
+          {/* Header */}
+          <header className="text-center mb-12">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-normal tracking-tight mb-4">
+              JOURNAL
             </h1>
-            <p className="text-muted text-sm">
-              Tips, strategies, and insights for your debt-free journey.
+            <p className="text-muted text-sm sm:text-base max-w-xl mx-auto">
+              Insights, strategies, and stories for those on the path to financial freedom
             </p>
-          </div>
+          </header>
 
-          <div className="space-y-4">
-            {posts.map((post) => (
+          {/* Featured Post */}
+          {featuredPost && (
+            <Link
+              href={`/blog/${featuredPost.slug}`}
+              className="block mb-8 group"
+            >
+              <article className="bg-gray-50 rounded-2xl p-6 sm:p-8 transition-all hover:bg-gray-100">
+                <div className="flex items-center gap-3 text-xs text-muted mb-3">
+                  <span className="bg-primary/10 text-primary px-2 py-0.5 rounded-full font-medium">Featured</span>
+                  <span>{featuredPost.date}</span>
+                  <span className="w-1 h-1 rounded-full bg-gray-300" />
+                  <span>{featuredPost.readTime}</span>
+                </div>
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-serif font-normal tracking-tight mb-3 group-hover:text-primary transition-colors">
+                  {featuredPost.title}
+                </h2>
+                <p className="text-muted text-sm sm:text-base leading-relaxed max-w-2xl">
+                  {featuredPost.excerpt}
+                </p>
+              </article>
+            </Link>
+          )}
+
+          {/* Blog Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            {otherPosts.map((post) => (
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="block p-4 rounded-xl border border-gray-100 hover:border-gray-200 transition-colors"
+                className="block group"
               >
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                  <div>
-                    <h2 className="text-base font-semibold mb-1">
-                      {post.title}
-                    </h2>
-                    <p className="text-muted text-sm leading-relaxed">
-                      {post.excerpt}
-                    </p>
-                  </div>
-                  <div className="flex items-center gap-3 text-xs text-muted shrink-0">
+                <article className="h-full bg-gray-50 rounded-xl p-5 transition-all hover:bg-gray-100 flex flex-col">
+                  <div className="flex items-center gap-2 text-xs text-muted mb-3">
                     <span>{post.date}</span>
                     <span className="w-1 h-1 rounded-full bg-gray-300" />
                     <span>{post.readTime}</span>
                   </div>
-                </div>
+                  <h2 className="text-base sm:text-lg font-serif font-normal tracking-tight mb-2 group-hover:text-primary transition-colors">
+                    {post.title}
+                  </h2>
+                  <p className="text-muted text-sm leading-relaxed flex-1">
+                    {post.excerpt}
+                  </p>
+                </article>
               </Link>
             ))}
           </div>
