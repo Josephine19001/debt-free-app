@@ -23,7 +23,7 @@ export default function TermsPage() {
               <p className="text-muted leading-relaxed">
                 Debt Free is an AI-powered debt management platform designed to help users track their debts, optimize payment strategies using proven methods like the debt avalanche and debt snowball approaches, and receive personalized financial guidance through our AI advisor feature.
               </p>
-              <div className="bg-gray-50 p-4 rounded-lg space-y-3">
+              <div className="bg-white/5 p-4 rounded-lg space-y-3">
                 <p className="text-muted leading-relaxed font-medium">
                   PLEASE READ THESE TERMS CAREFULLY BEFORE USING OUR PLATFORM.
                 </p>
@@ -93,7 +93,7 @@ export default function TermsPage() {
             {/* 4. Important Financial Disclaimer */}
             <section className="space-y-4">
               <h2 className="text-lg font-semibold">4. IMPORTANT FINANCIAL DISCLAIMER</h2>
-              <div className="bg-gray-50 p-4 rounded-lg space-y-3">
+              <div className="bg-white/5 p-4 rounded-lg space-y-3">
                 <p className="text-muted leading-relaxed font-medium">
                   DEBT FREE IS NOT A FINANCIAL ADVISOR, TAX ADVISOR, CREDIT COUNSELOR, OR LEGAL ADVISOR.
                 </p>

@@ -27,16 +27,12 @@ export default function Home() {
       <div className="flex-1 flex flex-col items-center justify-center gap-8 sm:gap-10 md:gap-12">
         {/* Hero Headline - Top */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-normal text-center tracking-tight max-w-4xl">
-          YOUR PATH TO BECOMING{" "}
-          <span className="inline-block relative">
-            {/* Invisible text to maintain width based on longest word */}
-            <span className="invisible">INTEREST</span>
-            {/* Actual rotating word positioned absolutely */}
-            <span
-              className={`gradient-text absolute left-0 right-0 text-center ${isAnimating ? "animate-fade-out" : "animate-fade-in"}`}
-            >
-              {rotatingWords[currentWordIndex].toUpperCase()}
-            </span>
+          YOUR PATH TO BECOMING
+          <br />
+          <span
+            className={`gradient-text ${isAnimating ? "animate-fade-out" : "animate-fade-in"}`}
+          >
+            {rotatingWords[currentWordIndex].toUpperCase()}
           </span>
           -FREE
         </h1>

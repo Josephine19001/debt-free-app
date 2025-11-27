@@ -25,7 +25,7 @@ export default function BlogPost({ title, subtitle, date, readTime, children }: 
             )}
             <div className="flex items-center gap-3 text-xs text-muted">
               <span>{date}</span>
-              <span className="w-1 h-1 rounded-full bg-gray-300" />
+              <span className="w-1 h-1 rounded-full bg-gray-600" />
               <span>{readTime}</span>
             </div>
           </header>
@@ -87,7 +87,7 @@ export function BlogStat({ value, label }: { value: string; label: string }) {
 
 export function BlogStatGrid({ children }: { children: React.ReactNode }) {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 my-6 bg-gray-50 rounded-lg p-4">
+    <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 my-6 bg-white/5 rounded-lg p-4">
       {children}
     </div>
   );
@@ -95,7 +95,7 @@ export function BlogStatGrid({ children }: { children: React.ReactNode }) {
 
 export function BlogHighlight({ children }: { children: React.ReactNode }) {
   return (
-    <div className="bg-gray-50 rounded-lg p-4 my-6">
+    <div className="bg-white/5 rounded-lg p-4 my-6">
       <p className="text-sm text-muted leading-relaxed">{children}</p>
     </div>
   );

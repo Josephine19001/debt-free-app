@@ -57,11 +57,11 @@ export default function BlogPage() {
               href={`/blog/${featuredPost.slug}`}
               className="block mb-8 group"
             >
-              <article className="bg-gray-50 rounded-2xl p-6 sm:p-8 transition-all hover:bg-gray-100">
+              <article className="bg-white/5 rounded-2xl p-6 sm:p-8 transition-all hover:bg-white/10">
                 <div className="flex items-center gap-3 text-xs text-muted mb-3">
                   <span className="bg-primary/10 text-primary px-2 py-0.5 rounded-full font-medium">Featured</span>
                   <span>{featuredPost.date}</span>
-                  <span className="w-1 h-1 rounded-full bg-gray-300" />
+                  <span className="w-1 h-1 rounded-full bg-gray-600" />
                   <span>{featuredPost.readTime}</span>
                 </div>
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-serif font-normal tracking-tight mb-3 group-hover:text-primary transition-colors">
@@ -82,10 +82,10 @@ export default function BlogPage() {
                 href={`/blog/${post.slug}`}
                 className="block group"
               >
-                <article className="h-full bg-gray-50 rounded-xl p-5 transition-all hover:bg-gray-100 flex flex-col">
+                <article className="h-full bg-white/5 rounded-xl p-5 transition-all hover:bg-white/10 flex flex-col">
                   <div className="flex items-center gap-2 text-xs text-muted mb-3">
                     <span>{post.date}</span>
-                    <span className="w-1 h-1 rounded-full bg-gray-300" />
+                    <span className="w-1 h-1 rounded-full bg-gray-600" />
                     <span>{post.readTime}</span>
                   </div>
                   <h2 className="text-base sm:text-lg font-serif font-normal tracking-tight mb-2 group-hover:text-primary transition-colors">

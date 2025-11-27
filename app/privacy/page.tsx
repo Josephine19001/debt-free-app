@@ -26,7 +26,7 @@ export default function PrivacyPage() {
               <p className="text-muted leading-relaxed">
                 The capitalized terms have the same meaning as ascribed in our Terms of Service, unless otherwise noted here.
               </p>
-              <div className="bg-gray-50 p-4 rounded-lg space-y-3">
+              <div className="bg-white/5 p-4 rounded-lg space-y-3">
                 <p className="text-muted leading-relaxed font-medium">
                   PLEASE READ THIS PRIVACY POLICY CAREFULLY TO UNDERSTAND OUR POLICIES AND PRACTICES REGARDING YOUR INFORMATION AND HOW WE WILL TREAT IT.
                 </p>

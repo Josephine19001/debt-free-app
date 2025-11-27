@@ -1,11 +1,11 @@
 @import 'tailwindcss';
 
 :root {
-  --background: #ffffff;
-  --foreground: #0a0a0a;
+  --background: #0a0a0a;
+  --foreground: #f5f5f5;
   --primary: #00c8b3;
   --secondary: #004162;
-  --muted: #6b7280;
+  --muted: #9ca3af;
 }
 
 @theme inline {
@@ -42,9 +42,11 @@ body {
   background-clip: text;
 }
 
-/* Primary Button - Liquid Glass Dark */
+/* Primary Button - Liquid Glass Light */
 .btn-primary {
-  background: rgba(10, 10, 10, 0.85);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   color: white;
   padding: 1rem 2.5rem;
   border-radius: 9999px;
@@ -55,19 +57,19 @@ body {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
 }
 
 .btn-primary:hover {
-  background: rgba(10, 10, 10, 0.95);
+  background: rgba(255, 255, 255, 0.15);
   transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
 /* Header Button - Smaller variant */
 .btn-header {
-  background: rgba(10, 10, 10, 0.85);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   color: white;
@@ -81,14 +83,14 @@ body {
   justify-content: center;
   gap: 0.5rem;
   text-decoration: none;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
 }
 
 .btn-header:hover {
-  background: rgba(10, 10, 10, 0.95);
+  background: rgba(255, 255, 255, 0.15);
   transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* Phone Frame - Half visible */
@@ -96,16 +98,18 @@ body {
   position: relative;
   width: 220px;
   height: 240px;
-  background: #0a0a0a;
+  background: #1a1a1a;
   border-radius: 36px 36px 0 0;
   padding: 8px 8px 0 8px;
-  box-shadow: 0 -20px 60px -10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 -20px 60px -10px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: none;
 }
 
 .phone-screen-half {
   width: 100%;
   height: 100%;
-  background: #f5f5f5;
+  background: #0f0f0f;
   border-radius: 28px 28px 0 0;
   overflow: hidden;
   position: relative;
@@ -118,7 +122,7 @@ body {
   transform: translateX(-50%);
   width: 70px;
   height: 22px;
-  background: #0a0a0a;
+  background: #1a1a1a;
   border-radius: 14px;
   z-index: 10;
 }
@@ -154,16 +158,16 @@ body {
   animation: fade-out-up 0.4s ease-out forwards;
 }
 
-/* Floating notification badge - Light glass grayish */
+/* Floating notification badge - Dark glass */
 .floating-badge {
   position: absolute;
   bottom: -20px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(120, 120, 130, 0.15);
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 9999px;
   padding: 0.75rem 1.5rem;
   display: flex;
@@ -171,8 +175,8 @@ body {
   gap: 0.5rem;
   font-size: 0.875rem;
   color: var(--foreground);
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06),
-    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
   white-space: nowrap;
 }
 
