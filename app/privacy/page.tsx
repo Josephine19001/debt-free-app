@@ -34,7 +34,7 @@ export default function PrivacyPage() {
                   BY ACCESSING OR USING OUR WEBSITE, APP, AND PLATFORM, YOU AGREE TO ACCEPT ALL THE TERMS CONTAINED IN THIS PRIVACY POLICY AND ACKNOWLEDGE AND AGREE WITH THE PRACTICES DESCRIBED HEREIN. IF YOU DO NOT AGREE WITH THE TERMS OF THIS PRIVACY POLICY, PLEASE DO NOT ACCESS AND USE OUR WEBSITE, APP, AND PLATFORM.
                 </p>
                 <p className="text-muted leading-relaxed">
-                  IF YOU HAVE ANY QUESTIONS REGARDING THIS PRIVACY POLICY, PLEASE SEND US AN EMAIL AT <a href="mailto:team@debt-free.app" className="text-primary hover:underline">TEAM@DEBT-FREE.APP</a>
+                  IF YOU HAVE ANY QUESTIONS REGARDING THIS PRIVACY POLICY, PLEASE SEND US AN EMAIL AT <a href="mailto:team@lunasync.app" className="text-primary hover:underline">TEAM@DEBT-FREE.APP</a>
                 </p>
                 <p className="text-muted leading-relaxed font-medium">
                   WE DO NOT SELL YOUR PERSONAL INFORMATION, NOR DO WE INTEND TO DO SO. WE DO NOT GIVE ACCESS TO YOUR PERSONAL INFORMATION TO THIRD PARTIES EXCEPT TO SUBPROCESSORS TO ASSIST US IN THE PROVISION OF OUR SERVICES TO YOU.
@@ -46,7 +46,7 @@ export default function PrivacyPage() {
             <section className="space-y-4">
               <h2 className="text-lg font-semibold">2. WHAT INFORMATION DO WE COLLECT?</h2>
               <p className="text-muted leading-relaxed">
-                When you register to use our Website, App, or Platform, we collect personal information (also referred to as personally identifiable information or "PII") which may include your first and last name, online contact information such as your email address or username, phone number, financial information related to your debts (creditor names, balances, interest rates, minimum payments), payment history, and other personal information necessary to provide our debt management services. The information so collected will be stored on our servers. You are able to change your personal information via email by contacting us at <a href="mailto:team@debt-free.app" className="text-primary hover:underline">team@debt-free.app</a> or through your profile or account settings on our Website, App, or Platform.
+                When you register to use our Website, App, or Platform, we collect personal information (also referred to as personally identifiable information or "PII") which may include your first and last name, online contact information such as your email address or username, phone number, financial information related to your debts (creditor names, balances, interest rates, minimum payments), payment history, and other personal information necessary to provide our debt management services. The information so collected will be stored on our servers. You are able to change your personal information via email by contacting us at <a href="mailto:team@lunasync.app" className="text-primary hover:underline">team@lunasync.app</a> or through your profile or account settings on our Website, App, or Platform.
               </p>
 
               <div className="space-y-3">
@@ -225,7 +225,7 @@ export default function PrivacyPage() {
                 Debt Free does not sell, trade, or otherwise transfer to outside third parties your "Personal Information" as the term is defined under the California Civil Code Section § 1798.82(h). Additionally, California Civil Code Section § 1798.83 permits Users of our Website, App, or Platform that are California residents to request certain information regarding our disclosure of their Personal Information to third parties for their direct marketing purposes.
               </p>
               <p className="text-muted leading-relaxed">
-                To make a request for such disclosure, or identification and/or deletion of Personal Information in all our systems that we store on you, please send an email to <a href="mailto:team@debt-free.app" className="text-primary hover:underline">team@debt-free.app</a>.
+                To make a request for such disclosure, or identification and/or deletion of Personal Information in all our systems that we store on you, please send an email to <a href="mailto:team@lunasync.app" className="text-primary hover:underline">team@lunasync.app</a>.
               </p>
             </section>
 
@@ -250,7 +250,7 @@ export default function PrivacyPage() {
               <div className="space-y-3">
                 <h3 className="font-medium">Rights of Data Subjects</h3>
                 <p className="text-muted leading-relaxed">
-                  To make any of the following requests, please contact us at <a href="mailto:team@debt-free.app" className="text-primary hover:underline">team@debt-free.app</a>:
+                  To make any of the following requests, please contact us at <a href="mailto:team@lunasync.app" className="text-primary hover:underline">team@lunasync.app</a>:
                 </p>
                 <ul className="list-disc list-inside text-muted leading-relaxed space-y-2 ml-4">
                   <li><strong>Access:</strong> You can request more information about the Personal Information we hold about you and a copy of the Personal Information.</li>
@@ -280,7 +280,7 @@ export default function PrivacyPage() {
                 <li>Give an "opt-out" or "unsubscribe" option.</li>
               </ul>
               <p className="text-muted leading-relaxed">
-                If you wish to opt out of email marketing, follow the instructions at the bottom of each email or contact us at <a href="mailto:team@debt-free.app" className="text-primary hover:underline">team@debt-free.app</a> and we will promptly remove you from all future marketing correspondences.
+                If you wish to opt out of email marketing, follow the instructions at the bottom of each email or contact us at <a href="mailto:team@lunasync.app" className="text-primary hover:underline">team@lunasync.app</a> and we will promptly remove you from all future marketing correspondences.
               </p>
             </section>
 
@@ -299,7 +299,7 @@ export default function PrivacyPage() {
                 If you have any questions about this Privacy Policy or our privacy practices, please contact us at:
               </p>
               <p className="text-muted leading-relaxed">
-                Email: <a href="mailto:team@debt-free.app" className="text-primary hover:underline">team@debt-free.app</a>
+                Email: <a href="mailto:team@lunasync.app" className="text-primary hover:underline">team@lunasync.app</a>
               </p>
             </section>
           </div>

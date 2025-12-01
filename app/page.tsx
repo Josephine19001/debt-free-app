@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import { useState, useEffect } from "react";
-import PageLayout from "@/components/PageLayout";
-import Logo from "@/components/Logo";
+import { useState, useEffect } from 'react';
+import Image from 'next/image';
+import PageLayout from '@/components/PageLayout';
 
-const rotatingWords = ["debt", "stress", "interest", "worry"];
+const rotatingWords = ['debt', 'stress', 'interest', 'worry'];
 
 export default function Home() {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -30,7 +30,9 @@ export default function Home() {
           YOUR PATH TO BECOMING
           <br />
           <span
-            className={`gradient-text ${isAnimating ? "animate-fade-out" : "animate-fade-in"}`}
+            className={`gradient-text ${
+              isAnimating ? 'animate-fade-out' : 'animate-fade-in'
+            }`}
           >
             {rotatingWords[currentWordIndex].toUpperCase()}
           </span>
@@ -42,25 +44,29 @@ export default function Home() {
           <div className="phone-frame-half">
             <div className="phone-screen-half">
               <div className="phone-notch" />
-              {/* Placeholder for app screenshot */}
-              <div className="w-full h-full flex items-center justify-center pt-8">
-                <Logo size={50} />
-              </div>
+              <Image
+                src="/app-screenshot.jpeg"
+                alt="Debt Free app screenshot"
+                fill
+                className="object-cover object-top pt-6"
+                priority
+              />
             </div>
           </div>
 
           {/* Floating notification badge */}
           <div className="floating-badge">
-            <svg className="w-4 h-4 text-[#00C8B3]" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-            </svg>
-            <span>AI found <strong>3 ways</strong> to save on interest</span>
+            <span>🎉</span>
+            <span>
+              Congrats! You just paid off <strong>half</strong> your loan
+            </span>
           </div>
         </div>
 
         {/* Subtitle */}
         <p className="text-muted text-center text-base sm:text-lg max-w-md mt-4">
-          Track your debts, optimize payments, and get AI-powered guidance to financial freedom.
+          Track your debts, optimize payments, and get AI-powered guidance to
+          financial freedom.
         </p>
 
         {/* CTA Button */}

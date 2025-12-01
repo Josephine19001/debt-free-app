@@ -31,7 +31,7 @@ export default function TermsPage() {
                   BY ACCESSING OR USING OUR WEBSITE, APP, AND PLATFORM, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THESE TERMS OF SERVICE AND OUR PRIVACY POLICY. IF YOU DO NOT AGREE TO THESE TERMS, PLEASE DO NOT ACCESS OR USE OUR PLATFORM.
                 </p>
                 <p className="text-muted leading-relaxed">
-                  IF YOU HAVE ANY QUESTIONS REGARDING THESE TERMS, PLEASE CONTACT US AT <a href="mailto:team@debt-free.app" className="text-primary hover:underline">TEAM@DEBT-FREE.APP</a>
+                  IF YOU HAVE ANY QUESTIONS REGARDING THESE TERMS, PLEASE CONTACT US AT <a href="mailto:team@lunasync.app" className="text-primary hover:underline">TEAM@DEBT-FREE.APP</a>
                 </p>
               </div>
             </section>
@@ -142,7 +142,7 @@ export default function TermsPage() {
               <div className="space-y-3">
                 <h3 className="font-medium">c. Account Termination</h3>
                 <p className="text-muted leading-relaxed">
-                  We reserve the right to suspend or terminate your account at any time for any reason, including but not limited to violation of these Terms, fraudulent activity, or inactivity. You may also delete your account at any time through your account settings or by contacting us at <a href="mailto:team@debt-free.app" className="text-primary hover:underline">team@debt-free.app</a>.
+                  We reserve the right to suspend or terminate your account at any time for any reason, including but not limited to violation of these Terms, fraudulent activity, or inactivity. You may also delete your account at any time through your account settings or by contacting us at <a href="mailto:team@lunasync.app" className="text-primary hover:underline">team@lunasync.app</a>.
                 </p>
               </div>
             </section>
@@ -274,7 +274,7 @@ export default function TermsPage() {
               <div className="space-y-3">
                 <h3 className="font-medium">a. Informal Resolution</h3>
                 <p className="text-muted leading-relaxed">
-                  Before filing a claim, you agree to try to resolve the dispute informally by contacting us at <a href="mailto:team@debt-free.app" className="text-primary hover:underline">team@debt-free.app</a>. We will try to resolve the dispute informally by contacting you via email within 30 days.
+                  Before filing a claim, you agree to try to resolve the dispute informally by contacting us at <a href="mailto:team@lunasync.app" className="text-primary hover:underline">team@lunasync.app</a>. We will try to resolve the dispute informally by contacting you via email within 30 days.
                 </p>
               </div>
 
@@ -361,7 +361,7 @@ export default function TermsPage() {
                 If you have any questions about these Terms of Service, please contact us at:
               </p>
               <p className="text-muted leading-relaxed">
-                Email: <a href="mailto:team@debt-free.app" className="text-primary hover:underline">team@debt-free.app</a>
+                Email: <a href="mailto:team@lunasync.app" className="text-primary hover:underline">team@lunasync.app</a>
               </p>
             </section>
           </div>
