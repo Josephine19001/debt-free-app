@@ -56,7 +56,7 @@ export default function Header() {
             <div className="absolute right-0 mt-3 w-56 glass-strong rounded-2xl p-2 shadow-xl shadow-black/20">
               {/* App Store Links */}
               <a
-                href="#"
+                href="https://apps.apple.com/app/id6755793398"
                 className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 transition-colors"
               >
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">

@@ -70,7 +70,7 @@ export default function Home() {
         </p>
 
         {/* CTA Button */}
-        <a href="#" className="btn-primary">
+        <a href="https://apps.apple.com/app/id6755793398" className="btn-primary">
           Get Started
         </a>
       </div>
